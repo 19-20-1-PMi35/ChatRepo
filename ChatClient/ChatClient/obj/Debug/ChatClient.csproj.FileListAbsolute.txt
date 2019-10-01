@@ -1,0 +1,6 @@
+C:\Users\maks\source\repos\ChatClient\ChatClient\bin\Debug\ChatClient.exe.config
+C:\Users\maks\source\repos\ChatClient\ChatClient\bin\Debug\ChatClient.exe
+C:\Users\maks\source\repos\ChatClient\ChatClient\bin\Debug\ChatClient.pdb
+C:\Users\maks\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.csprojAssemblyReference.cache
+C:\Users\maks\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.exe
+C:\Users\maks\source\repos\ChatClient\ChatClient\obj\Debug\ChatClient.pdb
