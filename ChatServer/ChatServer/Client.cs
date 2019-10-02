@@ -50,6 +50,7 @@ namespace InstantMessengerServer
         {
             try
             {
+                prog.users.Remove(currentUser);
                 br.Close();
                 bw.Close();
                 netStream.Close();
