@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace ChatClientWpf
 {
     /// <summary>
-    /// Interaction logic for LoginPage.xaml
+    /// Interaction logic for LoginWindow.xaml
     /// </summary>
-    public partial class LoginPage : Window
+    public partial class LoginWindow : Window
     {
-        public LoginPage()
+        public LoginWindow()
         {
             InitializeComponent();
         }
