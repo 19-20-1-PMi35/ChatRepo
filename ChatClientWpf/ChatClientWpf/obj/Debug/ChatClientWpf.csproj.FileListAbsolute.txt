@@ -31,3 +31,5 @@ D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\ChatClientWpf.g.
 D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\ChatClientWpf.Properties.Resources.resources
 D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\ChatClientWpf.csproj.GenerateResource.cache
 D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\ChatClientWpf.csproj.CoreCompileInputs.cache
+D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\RegistrationWindow.g.cs
+D:\3 year\ProgramEng\Chat\ChatClientWpf\ChatClientWpf\obj\Debug\RegistrationWindow.baml

@@ -29,6 +29,7 @@ namespace ChatClientWpf
             if (MessageReceived != null)
                 MessageReceived(this, e);
         }
+
         // Start connection thread and login or register.
         public void connect(string user)
         {
@@ -52,6 +53,14 @@ namespace ChatClientWpf
                 bw.Write(to);
                 bw.Write(msg);
                 bw.Flush();
+            }
+        }
+
+        public void AddUser(string login, string email, string password, string image)
+        {
+            if(_conn)
+            {
+                
             }
         }
 
@@ -100,7 +109,6 @@ namespace ChatClientWpf
         }
 
     }
-
 
     public class IMReceivedEventArgs : EventArgs
     {

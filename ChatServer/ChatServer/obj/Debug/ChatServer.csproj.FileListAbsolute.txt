@@ -4,3 +4,17 @@ C:\Users\maks\source\repos\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
 C:\Users\maks\source\repos\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
 C:\Users\maks\source\repos\ChatServer\ChatServer\obj\Debug\ChatServer.exe
 C:\Users\maks\source\repos\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\Chat.mdf
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\Chat_log.ldf
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.dll
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.SqlServer.dll
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.xml
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.SqlServer.xml
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
