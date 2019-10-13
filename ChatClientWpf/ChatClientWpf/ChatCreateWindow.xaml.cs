@@ -23,10 +23,5 @@ namespace ChatClientWpf
         {
             InitializeComponent();
         }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

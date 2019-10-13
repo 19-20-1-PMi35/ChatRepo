@@ -40,6 +40,11 @@ namespace InstantMessengerServer
                 bw = new BinaryWriter(netStream, Encoding.UTF8);
 
                 currentUser = br.ReadString();
+                string email = br.ReadString();
+                string password = br.ReadString();
+
+                prog.AddUser(currentUser, email, password, "");
+
                 prog.users.Add(currentUser, this);  // Add new user
                 Receiver();  // Listen to client in loop.
                 CloseConn();

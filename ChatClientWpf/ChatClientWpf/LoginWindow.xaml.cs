@@ -23,10 +23,10 @@ namespace ChatClientWpf
         {
             InitializeComponent();
         }
-
-        private void InitializeComponent()
+        
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
