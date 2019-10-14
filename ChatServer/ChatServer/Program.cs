@@ -1,8 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Net;
 using System.Net.Sockets;
-using ChatServer;
+using System.Threading;
+using System.Security.Cryptography.X509Certificates;
+using System.Collections.ObjectModel;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace InstantMessengerServer
 {
@@ -21,7 +28,7 @@ namespace InstantMessengerServer
         public int port = 2000;
         public TcpListener server;
 
-        public Dictionary<string, Client> users = new Dictionary<string, Client>();
+        public Dictionary<string, UserInfo> users = new Dictionary<string, UserInfo>();
         public Program()
         {
             Console.Title = "InstantMessenger Server";
@@ -45,14 +52,5 @@ namespace InstantMessengerServer
             }
         }
 
-        public void AddUser(string login, string email, string password, string image)
-        {
-            using (ChatEntities db = new ChatEntities())
-            {
-
-                db.Users.Add(new User { Login=login, Email=email, Password=password, Image=image});
-                db.SaveChanges();
-            }
-        }
     }
 }
