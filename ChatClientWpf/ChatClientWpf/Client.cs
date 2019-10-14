@@ -15,32 +15,40 @@ namespace ChatClientWpf
     {
         Thread tcpThread;      // Receiver
         bool _conn = false;    // Is connected/connecting?
+		bool _logged = false; 
         string _user;          // Username
+		string _pass;
 
         public event IMReceivedEventHandler MessageReceived;
 
         public string Server { get { return "localhost"; } }  // Address of server. In this case - local IP address.
         public int Port { get { return 2000; } }
-
+	
         public string UserName { get { return _user; } }
+		public string Password { get { return _pass; } }
+		public bool IsLoggedIn { get { return _logged; } }
 
         virtual protected void OnMessageReceived(IMReceivedEventArgs e)
         {
             if (MessageReceived != null)
                 MessageReceived(this, e);
         }
-
         // Start connection thread and login or register.
-        public void connect(string user)
+        public void connect(string user, string password)
         {
             if (!_conn)
             {
                 _conn = true;
                 _user = user;
+				_pass = password;
                 tcpThread = new Thread(new ThreadStart(SetupConn));
                 tcpThread.Start();
             }
         }
+		public void Login(string user, string password)
+		{
+			connect(user, password);
+		}
         public void Disconnect()
         {
             if (_conn)
@@ -53,14 +61,6 @@ namespace ChatClientWpf
                 bw.Write(to);
                 bw.Write(msg);
                 bw.Flush();
-            }
-        }
-
-        public void AddUser(string login, string email, string password, string image)
-        {
-            if(_conn)
-            {
-                
             }
         }
 
@@ -79,6 +79,7 @@ namespace ChatClientWpf
             bw = new BinaryWriter(netStream, Encoding.UTF8);
 
             bw.Write(UserName);
+			bw.Write(Password);
             bw.Flush();
 
             Receiver(); // Time for listening for incoming messages.
@@ -95,6 +96,7 @@ namespace ChatClientWpf
         }
         void Receiver()  // Receive all incoming packets.
         {
+			_logged = true;
             try
             {
                 while (client.Connected)  // While we are connected.
@@ -106,9 +108,12 @@ namespace ChatClientWpf
                 }
             }
             catch (IOException) { }
+
+			_logged = false;
         }
 
     }
+
 
     public class IMReceivedEventArgs : EventArgs
     {
