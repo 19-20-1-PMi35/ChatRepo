@@ -18,3 +18,17 @@ D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.xml
 D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\bin\Debug\EntityFramework.SqlServer.xml
 D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
 D:\3 year\ProgramEng\Chat\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\Chat.mdf
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\Chat_log.ldf
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\EntityFramework.dll
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\EntityFramework.xml
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\obj\Debug\ChatServer.csprojAssemblyReference.cache
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CopyComplete
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+C:\Users\Nafanya\ChatRepo\ChatServer\ChatServer\obj\Debug\ChatServer.pdb

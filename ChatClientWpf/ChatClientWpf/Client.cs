@@ -15,7 +15,9 @@ namespace ChatClientWpf
     {
         Thread tcpThread;      // Receiver
         bool _conn = false;    // Is connected/connecting?
-        string _user;          // Username
+		bool _logged = false;
+		string _user;          // Username
+		//string _pass;
 
         public event IMReceivedEventHandler MessageReceived;
 
@@ -23,20 +25,24 @@ namespace ChatClientWpf
         public int Port { get { return 2000; } }
 
         public string UserName { get { return _user; } }
+		//public string Password { get { return _pass; } }
+		public bool IsLoggedIn { get { return _logged; } }
 
-        virtual protected void OnMessageReceived(IMReceivedEventArgs e)
+		virtual protected void OnMessageReceived(IMReceivedEventArgs e)
         {
             if (MessageReceived != null)
                 MessageReceived(this, e);
         }
 
-        // Start connection thread and login or register.
+        // Start connection thread and login or register. Maybe require a password in arguements
         public void connect(string user)
         {
             if (!_conn)
             {
                 _conn = true;
                 _user = user;
+				// ADD PASSWORD
+				//_pass = user;
                 tcpThread = new Thread(new ThreadStart(SetupConn));
                 tcpThread.Start();
             }
@@ -95,6 +101,7 @@ namespace ChatClientWpf
         }
         void Receiver()  // Receive all incoming packets.
         {
+			_logged = true;
             try
             {
                 while (client.Connected)  // While we are connected.

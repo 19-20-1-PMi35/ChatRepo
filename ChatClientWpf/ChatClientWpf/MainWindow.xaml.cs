@@ -25,6 +25,7 @@ namespace ChatClientWpf
         Client c = new Client();
         IMReceivedEventHandler receivedHandler;
         string UserNickname;
+		//string UserPassword; //maybe should be in connect-function?
         public MainWindow()
         {
             InitializeComponent();
@@ -60,7 +61,7 @@ namespace ChatClientWpf
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             UserNickname = UserName.Text;
-            c.connect(UserNickname);
+            c.connect(UserNickname); //maybe here should be UserPassword, given above
         }
     }
 }

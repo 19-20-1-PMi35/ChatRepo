@@ -45,12 +45,12 @@ namespace InstantMessengerServer
             }
         }
 
-        public void AddUser(string login, string email, string password, string image)
+        public void AddUser(UserInfo obj, string email, string image)
         {
             using (ChatEntities db = new ChatEntities())
             {
 
-                db.Users.Add(new User { Login=login, Email=email, Password=password, Image=image});
+                db.Users.Add(new User { Login=obj.UserName, Email=email, Password=obj.Password, Image=image});
                 db.SaveChanges();
             }
         }
